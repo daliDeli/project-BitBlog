@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+main{    
+    background: linear-gradient(#3C3B3F, #605C3C);
+    color: #EEF0F2;
+    font-family: 'Courgette', cursive;
+}
