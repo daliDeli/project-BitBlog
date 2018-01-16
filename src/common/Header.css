@@ -1,5 +1,8 @@
 header{
-    background: #3C3B3F;
+    background: #005AA7;
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  
+    background: linear-gradient(to right, #FFFDE4, #005AA7); 
+    
     color: #EEF0F2;
     padding-bottom: 20px;
 }
