@@ -1,0 +1,14 @@
+
+h5{
+    color: #011627; 
+}
+
+.singlePost p{
+    color: #F71735;
+    font-size: 1.2em;
+}
+.authorImg img{
+    max-height: 28vh;
+    border-radius: 50%;
+    background: #011627;
+}

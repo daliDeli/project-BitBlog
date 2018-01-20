@@ -1,7 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette');
 
 main{    
-    background: linear-gradient(#3C3B3F, #605C3C);
-    color: #EEF0F2;
-    font-family: 'Courgette', cursive;
+    color: #011627;
+    padding-top: 4em;
+}
+
+.post a{
+    color: #011627;    
+}
+a:hover{
+    color: #F71735;    
+}
+img{
+    height: 30vh;
+}
+.authors:hover{
+    background: rgba(240,162,2,0.83);
+    background: -moz-linear-gradient(-45deg, rgba(240,162,2,0.83) 11%, rgba(255,146,10,0.83) 39%, rgba(255,146,10,0.83) 56%, rgba(255,146,10,0.39) 95%);
+    background: -webkit-linear-gradient(-45deg, rgba(240,162,2,0.83) 11%, rgba(255,146,10,0.83) 39%, rgba(255,146,10,0.83) 56%, rgba(255,146,10,0.39) 95%);
+    background: -o-linear-gradient(-45deg, rgba(240,162,2,0.83) 11%, rgba(255,146,10,0.83) 39%, rgba(255,146,10,0.83) 56%, rgba(255,146,10,0.39) 95%);
+    background: -ms-linear-gradient(-45deg, rgba(240,162,2,0.83) 11%, rgba(255,146,10,0.83) 39%, rgba(255,146,10,0.83) 56%, rgba(255,146,10,0.39) 95%);
+    background: linear-gradient(135deg, rgba(240,162,2,0.83) 11%, rgba(255,146,10,0.83) 39%, rgba(255,146,10,0.83) 56%, rgba(255,146,10,0.39) 95%);
 }

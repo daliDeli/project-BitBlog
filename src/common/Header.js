@@ -11,33 +11,30 @@ export default class Header extends Component {
 
     render() {
         return (
-            <header className="container-fluid">
-                <h1 className="text-center">
+           
+                <nav className="navbar navbar-expand-lg ">
+                    <Link to="/" className="navbar-brand">
                     BitBLOG
-                </h1>
-                <nav className="nav">
-                    <ul className="nav mx-auto ">
-                        <div className="row">
-                            <Link to="/" class="nav-link">
+                    </Link>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse " id="navbarNav">
+                        <ul className="navbar-nav ">
+                            <Link to="/" className="nav-link">
                                 <li className="nav-item"> Home</li>
                             </Link>
-                            <Link to="/authors" class="nav-link">
+                            <Link to="/authors" className="nav-link">
                                 <li className="nav-item"> Authors</li>
                             </Link>
-                            <Link to="/about" class="nav-link">
+                            <Link to="/about" className="nav-link">
                                 <li className="nav-item">About</li>
                             </Link>
-                        </div>
-                    </ul>
-                    <div className="row ">
-                        <div className="col-12">
-                            <button className="btn btn-primary" type="submit" onClick={this.goBack}>
-                                Back
-                        </button>
-                        </div>
+                        </ul>
+
                     </div>
                 </nav>
-            </header>
+            
         )
     }
 }

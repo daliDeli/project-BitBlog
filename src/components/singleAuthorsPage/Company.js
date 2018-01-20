@@ -6,12 +6,14 @@ export default class Company extends Component {
         if (this.props.company === undefined) {
             return "Loading"
         }
-        console.log(this.props)
+       
         return(
-            <div className="col-12 col-md-5 text-left">            
+            <div className="col-12 col-md-4 text-left singlePost">            
                 <h2>COMPANY</h2>
-                <h5>Company Name:{this.props.company.name}</h5>
-                <h5>Slogan:{this.props.company.catchPhrase}</h5>
+                <h5>Company Name</h5>
+                <p>{this.props.company.name}</p>
+                <h5>Slogan</h5>
+                <p>{this.props.company.catchPhrase}</p>
             </div>
         )
     }

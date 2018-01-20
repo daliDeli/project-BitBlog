@@ -1,5 +1,20 @@
-header{
-    background: #3C3B3F;
+@import url('https://fonts.googleapis.com/css?family=Rye');
+
+nav{
+    font-family: 'Rye', cursive;
+    background: #F0A202;
+    font-size: 1.4em;
+    -webkit-box-shadow: 0px 17px 10px -5px rgba(247,23,53,1);
+    -moz-box-shadow: 0px 17px 10px -5px rgba(247,23,53,1);
+    box-shadow: 0px 17px 10px -5px rgba(247,23,53,1);
+}
+.navbar-brand{
     color: #EEF0F2;
-    padding-bottom: 20px;
+    font-size: 2em;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+nav ul a{
+    color: #011627;
 }

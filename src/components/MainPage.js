@@ -41,27 +41,25 @@ export default class MainPage extends Component {
     render() {
         return (
             <main className="container-fluid">
-                <h2 >
-                    POSTS
-                </h2>
-                <div>
-
-                    {this.state.posts.map((post, i) => {
-                        if (i < 10) {
-                            return (
-
-                                <div key={post.id} className="row">
-                                    <Link to={`/posts/${post.id}`} className="col-12 align-center">
+                <div className="row">
+                    <h2 className=" col-12" >
+                        POSTS
+                    </h2>
+                    
+                        {this.state.posts.map((post, i) => {
+                            if (i < 10) {
+                                return (
+                                    <div className="col-12 col-md-4 align-center post" key={i} >
+                                    <Link to={`/posts/${post.id}`}  >
                                         <Post title={post.title} body={post.body} />
                                     </Link>
-                                    <hr />
-                                </div>
-                            )
+                                    </div>
+                                )
+                            }
                         }
-                    }
 
-                    )}
-
+                        )}
+                  
                 </div>
             </main>
         )

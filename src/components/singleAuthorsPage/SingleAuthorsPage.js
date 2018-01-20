@@ -5,7 +5,7 @@ import Address from "./Address";
 import Company from "./Company";
 import NameSurname from "./NameSurname";
 
-import "../MainPage.css";
+import "./SingleAuthorsPage.css";
 
 export default class SingleAuthorsPage extends Component {
     constructor() {
@@ -21,7 +21,6 @@ export default class SingleAuthorsPage extends Component {
         communicationService.getSingleAuthor(authorId,
             (authorData) => {
                 const author = authorData.data;
-                console.log(author);
                 this.setState({
                     author
                 },
@@ -46,17 +45,17 @@ export default class SingleAuthorsPage extends Component {
             phone: this.state.author.phone
         }
         return (
-            <main>
-                <div className="container">
+            <main className="container">
+                
                 <NameSurname nameSurnameData={nameSurnameData} />
                 <hr />
 
-                <div className="row">
+                <div className="row justify-content-center">
                 <Address address={this.state.author.address} />
              
                 <Company company={this.state.author.company} />
                 </div>
-                </div>
+             
 
             </main>
         )
